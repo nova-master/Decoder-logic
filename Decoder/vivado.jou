@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb  5 23:05:55 2023
+# Process ID: 3240
+# Current directory: C:/Users/dell/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9848
+# Log file: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/dell/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Decoder {C:/Users/dell/3D Objects/Decoder} -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new
+file mkdir {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new}
+close [ open {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new/Decoder.v} w ]
+add_files {{C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new/Decoder.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new
+file mkdir {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new}
+close [ open {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new/Decoder_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sim_1/new/Decoder_tb.v}}
+update_compile_order -fileset sim_1
+add_files -fileset constrs_1 -norecurse C:/Users/dell/Desktop/Basys3_Master.xdc
+update_compile_order -fileset sim_1
+launch_simulation
+source Decoder_tb.tcl
+import_files
+add_bp {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new/Decoder.v} 35
+remove_bps -file {C:/Users/dell/3D Objects/Decoder/Decoder.srcs/sources_1/new/Decoder.v} -line 35
+archive_project C:/Users/dell/Desktop/Decoder.xpr.zip -temp_dir C:/Users/dell/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3240-DESKTOP-U9B2L22 -force -include_local_ip_cache
